@@ -1,0 +1,1223 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: #F7F7F7;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    ul{
+        list-style: none;
+    }
+
+    #wrap {
+        position: relative;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    .lap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent;
+        transition: background-color 0.3s ease-out;
+    }
+
+    header li{
+        list-style-type: none;
+    }
+
+
+    .head-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #B650F0;
+        padding: 0.16vw;
+    }
+
+    .head-top p {
+        position: relative;
+        right: 44.2vw;
+        top: 0.2vw;
+        font-size: 2vw;
+        color: #FCFF55;
+    }
+
+    .head-top img {
+        width: 5vw;
+        position: relative;
+        left: 1.7vw;
+        top: 0.2vw;
+    }
+
+    .head-middle {
+        background-color: #ededed;
+        height: 3.4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0vw 0.1vw 0.4vw rgba(30, 30, 30, 0.168);
+    }
+
+    .head-middle .button {
+        display: flex;
+        position: relative;
+        right: 30.73vw;
+    }
+
+
+    .head-middle .button-red {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FE5F58;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-yellow {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FEBC30;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-green {
+        width: 1vw;
+        height: 1vw;
+        background-color: #29C840;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle p {
+        font-size: 1.3vw;
+        color: #4C4C4C;
+        border: 0.15vw solid #c3c3c3b4;
+        border-radius: 0.6vw;
+        width: 30vw;
+        height: 2.6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.4vw 8vw 0.4vw 8vw; */
+        /* 위  오  아 왼*/
+    }
+
+    .logo {
+        width: 14vw;
+        padding: 3vw;
+        position: relative;
+        left: 3vw;
+    }
+
+    .line {
+        border: 0.01vw solid #ffff;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 1.95vw;
+    }
+
+    /* 전체 헤더 컨테이너를 Flexbox로 설정 */
+    .main-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 3vw;
+        position: relative;
+        left: 32vw;
+        bottom: 5.15vw;
+    }
+
+    .left-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+    .right-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+    }
+
+    .middle-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+
+    .left-group ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-group li {
+        margin-bottom: 0.3vw;
+        text-align: center;
+    }
+
+
+    .main-header a {
+        display: block;
+        text-decoration: none;
+        color: #ffff;
+        font-size: 1vw;
+        padding-top: 1vw;
+        border-top: 0.26vw solid #ffff;
+        width: 100%;
+    }
+
+
+
+    .left-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+    .middle-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .right-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .left-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .middle-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .right-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        transform: rotate(15deg);
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+
+    .logo,
+    .line,
+    .main-header {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+
+    /* --- 새로 추가된 기능용 CSS --- */
+header {
+    position: fixed; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+/* .menu-trigger {
+    z-index: 20;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #B650F0; 
+    cursor: pointer;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+} */
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* --- [수정된 버전] 기능 구현 CSS --- */
+.logo, .line, .main-header {
+    opacity: 1;
+    transform: none;
+}
+
+header {
+    position: fixed;
+    top: 6.2vw;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
+}
+
+
+header.hide {
+    transform: translateY(-150%);
+}
+
+header.active {
+    background-color: #da9dfd58; 
+    backdrop-filter: blur(0.4vw); /* 👈 블러 효과 추가 (픽셀값 조절 가능) */
+    -webkit-backdrop-filter: blur(0.4vw); /* 👈 사파리 브라우저 호환용 */
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+}
+
+/* --- [추가] 메뉴 열렸을 때 내부 요소 색상 변경 --- */
+
+
+header.active .main-header a {
+    color: #B650F0;     
+    border-top-color: #B650F0 ; /* 메뉴 위 얇은 선도 보라색으로 */
+    transition: color 0.5s, border-color 0.5s; /* 색깔 부드럽게 바뀌게 */
+}
+
+
+header.active .line {
+    border-color: #B650F0;
+    transition: border-color 0.5s;
+}
+
+/* 3. 작은 장식 선들 (.line-1) 배경색 변경 */
+header.active .line-1 {
+    background-color: #B650F0;
+    transition: background-color 0.5s;
+    position: relative;
+    right: 0.2vw;
+}
+
+.menu-trigger {
+    position: fixed;
+    top: 7vw;
+    right: 1vw;
+    z-index: 100;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #B650F0;
+    padding: 0.6vw 1.5vw;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+
+}
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-trigger:hover {
+    font-size: 1.7vw;
+}
+
+
+.friends-container {
+        display: flex;
+        /* justify-content: center; */
+        /* 중앙 정렬 */
+        align-items: center;
+        align-items: flex-end;
+        height: 4vw;
+        width: 9vw;
+        /* height: 100vw; */
+        /* 화면 중앙에 보려고 넣은 거라 나중에 빼도 돼 */
+        /* background-color: black; */
+        /* border: 1px solid red; */
+        /* GIF처럼 배경 검게 */
+        margin-bottom: 5vw;
+        position: relative;
+        left: 4vw;
+        top: 2vw;
+    }
+
+    /* 공통 이미지 스타일 */
+    .letter {
+        /* width: 60px; */
+        /* 이미지 크기는 네 디자인에 맞춰 조절해 */
+        height: auto;
+        margin: 0 0.1vw;
+        /* 글자 사이 간격 살짝 */
+
+        /* 애니메이션 적용: 이름(bounce) 시간(1.5초) 무한반복(infinite) 부드럽게(ease-in-out) */
+        animation: bounce 1.6s infinite ease-in-out;
+    }
+
+    /* 움직임 정의 (위아래 둥둥) */
+    @keyframes bounce {
+
+        0%,
+        30% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-1.3vw);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+
+    }
+
+    /* 핵심! 글자마다 박자가 늦게 시작하게 설정 (Wave 효과) */
+    /* nth-child(숫자)는 n번째 이미지를 뜻해 */
+
+    .letter:nth-child(1) {
+        animation-delay: 0s;
+        width: 1vw;
+    }
+
+    /* F */
+    .letter:nth-child(2) {
+        animation-delay: 0.1s;
+        width: 0.8vw;
+    }
+
+    /* r */
+    .letter:nth-child(3) {
+        animation-delay: 0.2s;
+        width: 0.58vw;
+    }
+
+    /* i */
+    .letter:nth-child(4) {
+        animation-delay: 0.3s;
+        width: 1.09vw;
+    }
+
+    /* e */
+    .letter:nth-child(5) {
+        animation-delay: 0.4s;
+        width: 1.19vw;
+    }
+
+    /* n */
+    .letter:nth-child(6) {
+        animation-delay: 0.5s;
+        width: 1.2vw;
+    }
+
+    /* d */
+    .letter:nth-child(7) {
+        animation-delay: 0.6s;
+        width: 1.1vw;
+    }
+
+    /* s */
+    .letter:nth-child(8) {
+        animation-delay: 0.7s;
+        width: 0.7vw;
+    }
+
+
+
+.main{
+    width: 100vw;
+    min-height: 90vw;
+    background-image: url('./img/ross-main-bg.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+}
+
+.main img{
+    position: relative;
+    top: 48vw;
+    left: 8vw;
+}
+
+.main ul{
+    list-style: none;
+}
+
+.main ul li:nth-child(1) img:nth-child(1){
+    height: 11vw;
+}
+
+.main ul li:nth-child(1) img:nth-child(2){
+    height: 17vw;
+    position: relative;
+    left: 13vw;
+}
+
+.main ul li:nth-child(2) img{
+    height: 17vw;
+    margin-top: 2vw;
+}
+
+
+.section-1{
+    width: 100vw;
+    min-height: 70vw;
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 20vw;
+}
+
+.section-1 .who{
+    width: 44vw;
+    position: relative;
+    left: 45vw;
+}
+
+.section-1 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #FF8476;
+    width: 44vw;
+    text-align: right;
+    position: relative;
+    left: 45vw;
+    top: 1vw;
+    margin-bottom: 10vw;
+}
+
+.section-1 ul{
+    display: flex;
+    list-style: none;
+    align-items: end;
+}
+
+.section-1 ul li:nth-child(1) img{
+    width: 27vw;
+    margin-right: 1vw;
+}
+
+.section-1 ul li:nth-child(2) img{
+    width: 37vw;
+}
+
+
+.section-2{
+    width: 100vw;
+    min-height: 140vw;
+    border: 1px solid red;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.section-2 ul{
+    display: flex;
+}
+
+.section-2 ul:nth-child(1){
+    position: relative;
+    left: 38.7vw;
+}
+
+.section-2 ul:nth-child(1) img{
+    width: 30vw;
+    margin: 0.5vw;
+    z-index: -1;
+}
+
+.section-2 .ross-name{
+    width: 72vw;
+    z-index: 3;
+    position: absolute;
+    left:10vw;
+    top: 20vw;
+}
+
+
+.section-2 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #FF8476;
+}
+
+
+.section-2 p:nth-child(3){
+    width: 44vw;
+    text-align: right;
+    font-weight: 800;
+    position: relative;
+    top: 13vw;
+    left: 46vw;
+}
+
+.section-2 .keyword{
+    margin-top: 30vw;
+}
+
+.section-2 .keyword li{
+    width: 30vw;
+    margin: 0.5vw;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.section-2 .keyword li:nth-child(1){
+    position: relative;
+    left: 4vw;
+    top: 13vw;
+}
+
+.section-2 .keyword li:nth-child(2){
+    position: relative;
+    left: 14vw;
+}
+
+.section-2 .keyword li:nth-child(3){
+    position: relative;
+    left: 11.9vw;
+    top: 11vw;
+}
+
+.section-2 .keyword li:nth-child(1) img:nth-child(1){
+    width: 27vw;
+    margin-bottom: 1vw;
+}
+
+.section-2 .keyword li:nth-child(1) img:nth-child(3){
+    width: 40vw;
+}
+
+.section-2 .keyword li:nth-child(1) p{
+    width: 31vw;
+    margin-bottom: 2vw;
+}
+
+
+.section-2 .keyword li:nth-child(2) img:nth-child(1){
+    width: 20vw;
+    margin-bottom: 1vw;
+}
+
+.section-2 .keyword li:nth-child(2) img:nth-child(3){
+    width: 28vw;
+}
+
+.section-2 .keyword li:nth-child(2) p{
+    width: 28vw;
+    margin-bottom: 2vw;
+}
+
+
+.section-2 .keyword li:nth-child(3) img:nth-child(1){
+    width: 16vw;
+    margin-bottom: 1vw;
+}
+
+.section-2 .keyword li:nth-child(3) img:nth-child(3){
+    width: 21vw;
+}
+
+.section-2 .keyword li:nth-child(3) p{
+    width: 21vw;
+    margin-bottom: 2vw;
+    position: relative;
+    left: 0.8vw;
+}
+
+
+.section-3{
+    width: 100vw;
+    min-height: 60vw;
+    border: 1px solid red;
+    position: relative;
+    margin-top: 20vw;
+    background-image: url('./img/ross-7.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.section-3 img:nth-child(1){
+    width: 47vw;
+    position: relative;
+    left: 7vw;
+    top: 11vw;
+}
+
+.section-3 img:nth-child(2){
+    width: 30vw;
+    position: relative;
+    left: 29vw;
+    top: 12vw;
+}
+
+.section-3 .section-3-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 .section-3-txt img{
+    width: 4vw;
+    position: relative;
+    left: 6vw;
+    top: 9vw;
+}
+
+/* .section-3 .section-3-txt img:nth-child(3){
+    width: 4vw;
+    position: relative;
+    left: 6vw;
+    top: 18vw;
+} */
+
+.section-3 .section-3-txt p{
+    font-size: 1.8vw;
+    font-weight: 800;
+    line-height: 2.1vw;
+    width: 59vw;
+    color: #FF8476;
+    position: relative;
+    left: 5vw;
+    top: 14vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+
+.section-4{
+    width: 100vw;
+    min-height: 60vw;
+    border: 1px solid red;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.section-4 h3{
+    font-family: "Gurmukhi MN", "Noto Sans Gurmukhi", sans-serif;
+    font-size: 1.6vw;
+    color: #FF8476;
+    /* width: 30vw; */
+    line-height: 1.7vw;
+    margin-bottom: 1vw;
+}
+
+.section-4 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #FF8476;
+    width: 37vw;
+}
+
+.section-4 ul{
+    list-style: none;
+}
+
+.section-4 ul li{
+    margin-bottom: 4vw;
+    font-size: 0;
+}
+
+.section-4 .section-4-top{
+    display: flex;
+}
+
+.section-4 .interview-1{
+    position: relative;
+    left: 6vw;
+    /* border: 2px solid red; */
+}
+
+.section-4 .section-4-top .section-4-img ul{
+    display: flex;
+}
+
+.section-4 .section-4-top .section-4-img ul:nth-child(1){
+    align-items: flex-end;
+    position: relative;
+    left: 16vw;
+    top: 4vw;
+}
+
+.section-4 .section-4-top .section-4-img ul:nth-child(2){
+    position: relative;
+    left: 29vw;
+}
+
+.section-4 .section-4-top .section-4-img img{
+    margin: 0.3vw;
+}
+
+
+.section-4 .section-4-img ul:nth-child(1) li:nth-child(1) img{
+    width: 12vw;
+}
+
+
+.section-4 .section-4-img ul:nth-child(1) li:nth-child(2) img{
+    width: 20vw;
+}
+
+.section-4 .section-4-img ul:nth-child(2) li:nth-child(1) img{
+    width: 11vw;
+}
+
+.section-4 .section-4-img ul:nth-child(2) li:nth-child(2) img{
+    width: 22vw;
+}
+
+
+
+.section-4 .section-4-bottom{
+    display: flex;
+}
+
+.section-4 .section-4-bottom ul{
+    position: relative;
+    /* right: 1.4vw; */
+    left: 2vw;
+}
+
+.section-4 .section-4-bottom h3{
+    text-align: right;
+}
+.section-4 .section-4-bottom p{
+    text-align: right;
+}
+
+.section-4 .section-4-bottom img{
+    width: 45vw;
+    position: relative;
+    top: 5vw;
+    margin: 5vw;
+}
+
+
+.section-5{
+    width: 100vw;
+    min-height: 190vw;
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    margin-top: 30vw;
+}
+
+.section-5 h2{
+    font-family: "Gurmukhi MN", "Noto Sans Gurmukhi", sans-serif;
+    font-size: 4vw;
+    color: #FF8476;
+    position: relative;
+    left: 8vw;
+    line-height: 5.3vw;
+    letter-spacing: -0.3vw;
+    margin-bottom: 10vw;
+}
+
+.section-5 h3{
+    font-family: "Gurmukhi MN", "Noto Sans Gurmukhi", sans-serif;
+    font-size: 3vw;
+    color: #FF8476;
+}
+
+.section-5 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #FF8476;
+    width: 38vw;
+}
+
+.section-5 h2 span{
+    font-size: 8vw;
+}
+
+.section-5 ul li{
+    display: flex;
+}
+
+.section-5 ul li:nth-child(1) .section-5-img{
+    display: flex;
+    flex-flow: column;
+    justify-content: right;
+    align-items:end;
+    /* border: 1px solid red; */
+    position: relative;
+    left: 25vw;
+}
+
+.section-5 ul li:nth-child(1) .section-5-txt{
+    position: relative;
+    left: 20vw;
+    top: 10vw;
+}
+
+.section-5 ul li:nth-child(1) .section-5-img img:nth-child(1){
+    width: 29vw;
+    margin-bottom: 1vw;
+}
+
+.section-5 ul li:nth-child(1) .section-5-img img:nth-child(2){
+    
+    width: 20vw;
+}
+
+.section-5 ul li:nth-child(2){
+    display: flex;
+    flex-flow: column;
+    margin-top: 20vw;
+}
+
+
+.section-5 ul li:nth-child(2) .section-5-img{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    position: relative;
+    right: 19vw;
+}
+
+.section-5 ul li:nth-child(2) .section-5-img img:nth-child(1){
+    width: 35vw;
+    margin: 0.5vw;
+}
+
+.section-5 ul li:nth-child(2) .section-5-img img:nth-child(2){
+    width: 27vw;
+    margin: 0.5vw;
+    position: relative;
+    bottom: 8vw;
+}
+
+
+.section-5 ul li:nth-child(2) .section-5-txt{
+    position: relative;
+    left: 36vw;
+    bottom: 13vw;
+}
+
+.section-5 ul li:nth-child(2) .section-5-txt p{
+    width: 40vw;
+}
+
+.section-5 ul li:nth-child(3){
+    display: flex;
+    flex-flow: column;
+    margin-top: 4vw;
+}
+
+.section-5 ul li:nth-child(3) .section-5-img{
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    position: relative;
+    left: 8vw;
+}
+
+.section-5 ul li:nth-child(3) .section-5-img img:nth-child(1){
+    width: 25vw;
+    margin: 0.5vw;
+}
+
+.section-5 ul li:nth-child(3) .section-5-img img:nth-child(2){
+    width: 45vw;
+    margin: 0.5vw;
+}
+
+.section-5 ul li:nth-child(3) .section-5-txt{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items:flex-end;
+    position: relative;
+    right: 6.5vw;
+    top: 3vw;
+}
+
+
+.section-5 ul li:nth-child(3) .section-5-txt h3{
+    text-align: right;
+}
+
+.section-5 ul li:nth-child(3) .section-5-txt p{
+    text-align: right;
+}
+
+
+.section-5 .circle{
+    width: 80vw;
+    height: 98vw;
+    background-color: #F8E8E6;
+    position: absolute;
+    left: 0;
+    top: 40vw;
+    z-index: -1;
+}
+
+
+.section-6{
+    width: 100vw;
+    min-height: 80vw;
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    margin-top: 10vw;
+}
+
+.section-6 p{
+    font-size: 3.4vw;
+    line-height: 3.4vw;
+    color: #FF8476;
+    font-weight: 400;
+    width: 52vw;
+    position: relative;
+    left: 6vw;
+}
+
+.section-6 img:nth-child(2){
+    width: 24vw;
+    position: relative;
+    left: 71vw;
+    /* top: 5vw; */
+    bottom: 13vw;
+
+}
+
+.section-6 img:nth-child(3){
+    width: 53vw;
+    position: relative;
+    left: 42vw;
+    bottom: 13vw;
+    /* top: 5vw; */
+    margin-top: 1vw;
+}
+
+.section-6 .section-6-txt{
+    position: absolute;
+    color: #FF8476;
+    top: 43vw;
+    left: 10vw;
+    border: 1px solid red;
+    height: 40vw;
+}
+.section-6 h2{
+    font-family: "Gurmukhi MN", "Noto Sans Gurmukhi", sans-serif;
+    font-size: 10vw;
+    letter-spacing: -0.7vw;
+    position: relative;
+    top: 6.5vw;
+    left: 2vw;
+}
+
+.section-6 h3{
+    font-family: "Gurmukhi MN", "Noto Sans Gurmukhi", sans-serif;
+    font-size: 7vw;
+    letter-spacing: -0.3vw;
+    position: relative;
+    left: 9vw;
+}
+
+.section-6 h1{
+    font-family: "Gurmukhi MN", "Noto Sans Gurmukhi", sans-serif;
+    font-size: 23vw;
+    letter-spacing: -1vw;
+    position: relative;
+    bottom: 14vw;
+}
+
+
+.section-7{
+    width: 100vw;
+    min-height: 80vw;
+    border: 1px solid red;
+    position: relative;
+}
+
+.section-7 img{
+    margin: 0.5vw;
+}
+
+.section-7 ul{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.section-7 ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-7 ul li:nth-child(1){
+    position: relative;
+    right: 18vw;
+}
+
+.section-7 ul li:nth-child(2){
+    position: relative;
+    left: 7vw;
+}
+
+.section-7 ul li:nth-child(1) img:nth-child(1){
+    width: 38vw;
+}
+
+.section-7 ul li:nth-child(1) img:nth-child(2){
+    width: 26vw;
+}
+
+
+.section-7 .last-txt{
+    width: 27vw;
+    height: 21vw;
+    background-color: #FF8476;
+    color: #FFE7E5;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    padding: 2vw;
+    position: relative;
+    top: 0.5vw;
+    right: 0.4vw;
+}
+
+.section-7 ul li:nth-child(1){
+    align-items:flex-end;
+}
+
+
+.section-7 ul li:nth-child(2){
+    align-items:flex-start;
+}
+
+.section-7 ul li:nth-child(2) img:nth-child(2){
+    width: 20vw;
+}
+
+.section-7 ul li:nth-child(2) img:nth-child(3){
+    width: 39vw;
+}
+
+
+
+
+
+footer{
+    width: 100vw;
+    min-height: 36vw;
+    background-color: #FF8476;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    margin-top: 20vw;
+    color: #FFE7E5;
+}
+
+footer img{
+    width: 16vw;
+    margin-bottom: 1vw;
+    position: relative;
+    right: 34vw;
+}
+
+footer .footer-line{
+    width: 92%;
+    border: 0.09vw solid #FFE7E5;
+    margin-bottom: 1vw;
+}
+
+footer .nav{
+    display: flex;
+}
+
+footer .nav ul{
+    display: flex;
+}
+
+footer .nav ul:nth-child(1){
+    position: relative;
+    right: 19vw;
+}
+
+footer .nav ul:nth-child(2){
+    position: relative;
+    left: 15vw;
+}
+
+footer .nav li{
+    list-style: none;
+    margin: 1vw;
+}
+
+
+footer .nav li a{
+    color: #FFE7E5;
+    font-size: 1.7vw;
+}
+
+
+footer p{
+    color: #FFE7E5;
+    font-size: 1.3vw;
+    width: 66vw;
+    position: relative;
+    right: 8.4vw;
+    top: 2vw;
+}
