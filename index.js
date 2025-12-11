@@ -4,7 +4,7 @@ gsap.from(
                 x: "-30vw",
                 opacity: 0, //투명인 상태에서 시작
                 duration: 1, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
-                delay: 0.3,
+                delay: 0.2,
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
@@ -23,7 +23,7 @@ gsap.from(
                 x: "30vw",
                 opacity: 0, //투명인 상태에서 시작
                 duration: 1, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
-                delay: 0.3,
+                delay: 0.2,
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
@@ -646,7 +646,7 @@ gsap.from(
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
                     trigger: ".section-5 ul li:nth-child(3) .section-5-img img:nth-child(2)",   // → trigger 를 h2 로
-                    start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
+                    start: "top center",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
                     toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
                     markers: false //페이지에 스크롤 위치 마커
                 }
@@ -713,15 +713,15 @@ gsap.from(
 gsap.from(
             ".section-6 .section-6-txt",
             {
-                x: "-20vw",
+                x: "-30vw",
                 opacity: 0, //투명인 상태에서 시작
-                duration: 1, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
+                duration: 0.6, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
                 delay: 0.5,
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
                     trigger: ".section-6 .trigger",   // → trigger 를 h2 로
-                    start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
+                    start: "top center",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
                     toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
                     markers: false //페이지에 스크롤 위치 마커
                 }
