@@ -475,6 +475,7 @@ header.active .line-1 {
     background-repeat: no-repeat;
     display: flex;
     flex-flow: column;
+    position: relative;
 }
 
 .main img{
@@ -487,19 +488,39 @@ header.active .line-1 {
     list-style: none;
 }
 
-.main ul li:nth-child(1) img:nth-child(1){
+.main .name-1{
     height: 11vw;
 }
 
-.main ul li:nth-child(1) img:nth-child(2){
+.main .name-2{
     height: 17vw;
     position: relative;
     left: 13vw;
 }
 
-.main ul li:nth-child(2) img{
+.main .name-3{
     height: 17vw;
     margin-top: 2vw;
+}
+
+.main .tag-section img{
+    height: 4vw;
+    width: auto;
+}
+
+.main .tag-1{
+    position: relative;
+    top: -20vw;
+    left: 70vw;
+    /* border: 1px solid red; */
+}
+
+.main .tag-2{
+    position: relative;
+    /* top: -40vw; */
+    top: 4vw;
+    left: 20vw;
+    /* border: 1px solid red; */
 }
 
 
@@ -548,7 +569,7 @@ header.active .line-1 {
 .section-2{
     width: 100vw;
     min-height: 140vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     margin-top: 20vw;
 }
@@ -674,7 +695,7 @@ header.active .line-1 {
 .section-3{
     width: 100vw;
     min-height: 60vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     margin-top: 20vw;
     background-image: url('./img/ross-7.png');
@@ -740,7 +761,7 @@ header.active .line-1 {
 .section-4{
     width: 100vw;
     min-height: 60vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     margin-top: 20vw;
 }
@@ -848,7 +869,7 @@ header.active .line-1 {
 .section-5{
     width: 100vw;
     min-height: 190vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     display: flex;
     flex-flow: column;
@@ -1010,7 +1031,7 @@ header.active .line-1 {
 .section-6{
     width: 100vw;
     min-height: 80vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     display: flex;
     flex-flow: column;
@@ -1050,7 +1071,7 @@ header.active .line-1 {
     color: #FF8476;
     top: 43vw;
     left: 10vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 40vw;
 }
 .section-6 h2{
@@ -1082,7 +1103,7 @@ header.active .line-1 {
 .section-7{
     width: 100vw;
     min-height: 80vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
 }
 
