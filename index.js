@@ -1,5 +1,5 @@
 gsap.from(
-            ".main ul li:nth-child(1) img:nth-child(1)",
+            ".main .name-1",
             {
                 x: "-30vw",
                 opacity: 0, //투명인 상태에서 시작
@@ -8,7 +8,7 @@ gsap.from(
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
-                    trigger: ".main ul li:nth-child(1) img:nth-child(1)",   // → trigger 를 h2 로
+                    trigger: ".main .name-1",   // → trigger 를 h2 로
                     start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
                     toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
                     markers: false //페이지에 스크롤 위치 마커
@@ -18,7 +18,7 @@ gsap.from(
         
 
 gsap.from(
-            ".main ul li:nth-child(1) img:nth-child(2)",
+            ".main .name-2",
             {
                 x: "30vw",
                 opacity: 0, //투명인 상태에서 시작
@@ -27,8 +27,8 @@ gsap.from(
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
-                    trigger: ".main ul li:nth-child(1) img:nth-child(1)",   // → trigger 를 h2 로
-                    start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
+                    trigger: ".main .name-2",   // → trigger 를 h2 로
+                    start: "top center",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
                     toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
                     markers: false //페이지에 스크롤 위치 마커
                 }
@@ -37,16 +37,52 @@ gsap.from(
         
 
 gsap.from(
-            ".main ul li:nth-child(2) img:nth-child(1)",
+            ".main .name-3",
             {
                 y: "30vw",
                 opacity: 0, //투명인 상태에서 시작
                 duration: 1, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
+                delay: 0,
+                ease: "power1.out",
+                stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
+                scrollTrigger: {
+                    trigger: ".main .name-3",   // → trigger 를 h2 로
+                    start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
+                    toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
+                    markers: false //페이지에 스크롤 위치 마커
+                }
+            }
+);
+
+gsap.from(
+            ".main .tag-1",
+            {
+                y: "4vw",
+                opacity: 0, //투명인 상태에서 시작
+                duration: 0.5, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
                 delay: 0.3,
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
-                    trigger: ".main ul li:nth-child(2) img:nth-child(1)",   // → trigger 를 h2 로
+                    trigger: ".main .tag-1",   // → trigger 를 h2 로
+                    start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
+                    toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
+                    markers: false //페이지에 스크롤 위치 마커
+                }
+            }
+);
+
+gsap.from(
+            ".main .tag-2",
+            {
+                y: "4vw",
+                opacity: 0, //투명인 상태에서 시작
+                duration: 0.5, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
+                delay: 0.5,
+                ease: "power1.out",
+                stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
+                scrollTrigger: {
+                    trigger: ".main .tag-2",   // → trigger 를 h2 로
                     start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
                     toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
                     markers: false //페이지에 스크롤 위치 마커
@@ -179,7 +215,7 @@ gsap.from(
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
                 scrollTrigger: {
-                    trigger: ".section-2 p:nth-child(3)",   // → trigger 를 h2 로
+                    trigger: ".section-2 .ross-name",   // → trigger 를 h2 로
                     start: "top bottom",                // h2 의 top 이 뷰포트 bottom 에 닿을 때
                     toggleActions: "play reverse play reverse", // 나타날때마다 모션 진행
                     markers: false //페이지에 스크롤 위치 마커
